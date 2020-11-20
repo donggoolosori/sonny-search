@@ -19,4 +19,7 @@ git push origin main
 git checkout -b 브랜치명
 # branch 간 이동
 git checkout 브랜치명
+
+# branch 명
+# (ex) kdj/add-ml , kdj/add-ml , lys/frontend , jsh/backend
 ```
