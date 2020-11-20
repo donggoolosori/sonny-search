@@ -1,6 +1,11 @@
 # Sonny_Search
 [Creative Challenge] React js web that detects Sonny from Tottenham videos
 
+``` clone
+git clone https://github.com/sallyeric/Sonny_Search.git
+```
+
+
 ``` bash
 git add .
 git commit -m "깃메시지"
