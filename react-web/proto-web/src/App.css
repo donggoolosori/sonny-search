@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Nunito:wght@200&display=swap');
+
+.App {
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.App-header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to right, #041535fd 0%, #130c38 100%);
+}
+
+#LogoArea {
+  padding-top: 15px;
+  padding-left: 60px;
+}
+
+#LogoCircle {
+  height: 70px;
+  width: 70px;
+  background-color: #fff;
+  border: 3px solid #130c38; 
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#LogoPhoto {
+  height: 50px;
+  width: 50px;
+  background-image: url("./image/Tottenham.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  padding-left: 20px;
+  padding-top: 21px;
+}
+
+#Title {
+  padding-top: 15px;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 50px;
+  color: #fff;
+  font-family: 'Asul', sans-serif;
+}
+
+.Main {
+  background-image: url("./image/Sonny3.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.Intro {
+  padding-top: 300px;
+  text-align: left;
+  font-size: 30px;
+  color: #fff;
+  line-height: 50px;
+  font-family: 'Nunito', sans-serif; 
+}
+
+.VerticalLineArea {
+  padding-top: 200px;
+  padding-left: 100px;
+}
+
+#VerticalLine {  
+  background-color: #fff;
+  height: 800px;
+  width: 3px;
+}
+
+.UploadArea{
+  padding-top: 300px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#FileNameBox{
+  background-color: #fff;
+  height: 80px;
+  width: 660px;
+  border: 5px solid #130c38; 
+}
+
+.ButtonArea{
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+#SearchFileButton{
+  height: 80px;
+  width: 300px;
+}
+
+#searchFileButton {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  height: 80px;
+  width: 300px;
+}
+
+#ConvertButton{
+  height: 80px;
+  width: 300px;
+  padding-left: 30px;
+}
+
+#convertButton {
+  background-color: #ff953d; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  height: 80px;
+  width: 300px;
+}
+
