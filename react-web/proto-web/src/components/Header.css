@@ -1,0 +1,41 @@
+.App-header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to right, #041535fd 0%, #130c38 100%);
+}
+
+#LogoArea {
+  padding-top: 15px;
+  padding-left: 60px;
+}
+
+#LogoCircle {
+  height: 70px;
+  width: 70px;
+  background-color: #fff;
+  border: 3px solid #130c38;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#LogoPhoto {
+  height: 50px;
+  width: 50px;
+  background-image: url("../image/Tottenham.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  padding-left: 20px;
+  padding-top: 21px;
+}
+
+#Title {
+  padding-top: 15px;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 50px;
+  color: #fff;
+  font-family: "Asul", sans-serif;
+}
