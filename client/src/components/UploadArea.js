@@ -6,6 +6,7 @@ import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 import CachedIcon from "@material-ui/icons/Cached";
 import axios from "../axios";
 import cloudImage from "../image/cloud.jpg";
+import spinner from "../image/spinner.gif";
 
 const useStyles = makeStyles({
   root: {
@@ -27,14 +28,15 @@ const useStyles = makeStyles({
 const UploadArea = () => {
   const classes = useStyles();
   const [selectedFiles, setSelectedFiles] = useState();
-  const [resultImg, setResultImage] = useState("");
-  const [isImage, setIsImage] = useState(false);
+  const [resultImg, setResultImage] = useState(cloudImage);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleFileInput = (e) => {
     setSelectedFiles(e.target.files[0]);
   };
 
   const handleConvertButton = async () => {
+    setIsLoading(true);
     const formData = new FormData();
     formData.append("image", selectedFiles);
     try {
@@ -42,18 +44,19 @@ const UploadArea = () => {
         data: { imgsrc },
       } = await axios.post("/predict", formData);
       setResultImage(imgsrc);
-      setIsImage(true);
+      setIsLoading(false);
     } catch (error) {
       console.error(error);
     }
   };
+
   return (
     <div className="uploadArea">
-      <img
-        className="resultImage"
-        alt="Result"
-        src={isImage ? process.env.PUBLIC_URL + resultImg : cloudImage}
-      />
+      {isLoading ? (
+        <img className="spinner" alt="" src={spinner} />
+      ) : (
+        <img className="resultImage" alt="Result" src={resultImg} />
+      )}
       <div className="buttonArea">
         <input
           accept="image/*"

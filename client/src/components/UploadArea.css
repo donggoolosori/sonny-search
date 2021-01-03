@@ -10,7 +10,8 @@
   display: flex;
   justify-content: center;
 }
-.resultImage {
+.resultImage,
+.spinner {
   display: flex;
   justify-content: center;
   width: 600px;
