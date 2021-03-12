@@ -1,25 +1,12 @@
-# Sonny_Search
-[Creative Challenge] React js web that detects Sonny from Tottenham videos
-
-``` clone
-git clone https://github.com/sallyeric/Sonny_Search.git
-```
-
-
-``` bash
-git add .
-git commit -m "깃메시지"
-# 오류가 난다면 (pull를 하기 위해서 무조건 commit 먼저)
-git pull origin main
-git push origin main
-```
-
-``` bash
-# 새로운 branch 생성과 이동
-git checkout -b 브랜치명
-# branch 간 이동
-git checkout 브랜치명
-
-# branch 명
-# (ex) kdj/add-ml , kdj/add-ml , lys/frontend , jsh/backend
-```
+# Description
+sonny detection with yolov5
+# Data set
+Used 5500 custom dataset image
+# Model Evaluation
+<img width="553" alt="스크린샷 2021-02-18 오후 8 28 31" src="https://user-images.githubusercontent.com/53213397/110943332-72cbaa00-837e-11eb-9c0d-66c8019c721d.png">
+The numerical performance was pretty good.
+# Detection Result
+<img width="1440" alt="    " src="https://user-images.githubusercontent.com/53213397/110944398-c12d7880-837f-11eb-95e5-192dcc4a8449.png">
+# Web App
+<img width="1440" alt="스크린샷 2021-02-18 오후 6 29 40" src="https://user-images.githubusercontent.com/53213397/110944528-ed48f980-837f-11eb-9226-c91a2828b939.png">
+<img width="1440" alt="스크린샷 2021-02-18 오후 6 30 22" src="https://user-images.githubusercontent.com/53213397/110944578-fa65e880-837f-11eb-966b-b7e71d992857.png">
